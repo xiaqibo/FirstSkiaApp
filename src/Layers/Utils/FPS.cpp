@@ -28,7 +28,7 @@ void FPS::Draw(SkCanvas* canvas)
 	SkRect measure;
 	font.measureText(sFPS.c_str(), strlen(sFPS.c_str()), SkTextEncoding::kUTF8, &measure);
 
-	canvas->drawString(sFPS.c_str(), 5, measure.height(), font, paint);
+	canvas->drawString(sFPS.c_str(), 5, 0, font, paint);
 }
 
 SkString FPS::Get() const

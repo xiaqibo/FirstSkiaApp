@@ -24,13 +24,14 @@
 int WINAPI WinMain(HINSTANCE hInstance, HINSTANCE hPrevInstance, LPSTR lpCmdLine, int nCmdShow)
 {
 	Application app;
+	app.AddLayer(std::make_shared<ExampleLayer4>());
+	app.AddLayer(std::make_shared<ExampleLayer6>());
+
 	app.AddLayer(std::make_shared<ExampleLayer0>());
 	app.AddLayer(std::make_shared<ExampleLayer1>());
 	app.AddLayer(std::make_shared<ExampleLayer2>());
 	app.AddLayer(std::make_shared<ExampleLayer3>());
-	app.AddLayer(std::make_shared<ExampleLayer4>());
 	app.AddLayer(std::make_shared<ExampleLayer5>());
-	app.AddLayer(std::make_shared<ExampleLayer6>());
 	app.AddLayer(std::make_shared<ExampleLayer7>());
 	app.AddLayer(std::make_shared<ExampleLayer8>());
 	app.AddLayer(std::make_shared<ExampleLayer9>());
